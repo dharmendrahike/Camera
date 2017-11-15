@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="size3">3.65dp</dimen>
+    <dimen name="size5">5dp</dimen>
+    <dimen name="size7">7dp</dimen>
+    <dimen name="size8">8dp</dimen>
+    <dimen name="size9">9dp</dimen>
+    <dimen name="size10">10dp</dimen>
+    <dimen name="size11">11dp</dimen>
+    <dimen name="size12">12dp</dimen>
+    <dimen name="size13">13dp</dimen>
+    <dimen name="size14">14dp</dimen>
+    <dimen name="size15">15dp</dimen>
+    <dimen name="size16">16dp</dimen>
+    <dimen name="size17">17dp</dimen>
+    <dimen name="size18">18dp</dimen>
+    <dimen name="size19">19dp</dimen>
+    <dimen name="size20">20dp</dimen>
+    <dimen name="size21">21dp</dimen>
+    <dimen name="size22">22dp</dimen>
+    <dimen name="size23">23dp</dimen>
+    <dimen name="size24">24dp</dimen>
+    <dimen name="size26">26dp</dimen>
+    <dimen name="size30">30dp</dimen>
+    <dimen name="size32">32dp</dimen>
+    <dimen name="size35">35dp</dimen>
+    <dimen name="size38">38dp</dimen>
+    <dimen name="size40">40dp</dimen>
+    <dimen name="size42">42dp</dimen>
+    <dimen name="size45">45dp</dimen>
+    <dimen name="size46">46dp</dimen>
+    <dimen name="size47">47dp</dimen>
+    <dimen name="size50">50dp</dimen>
+    <dimen name="height0_5">0.5dp</dimen>
+    <dimen name="height1">1dp</dimen>
+    <dimen name="height2">2dp</dimen>
+    <dimen name="height3">3dp</dimen>
+    <dimen name="height4">4dp</dimen>
+    <dimen name="height5">5dp</dimen>
+    <dimen name="height6">6dp</dimen>
+    <dimen name="height7">7dp</dimen>
+    <dimen name="height10">10dp</dimen>
+    <dimen name="height14">14dp</dimen>
+    <dimen name="height15">15dp</dimen>
+    <dimen name="height16">16dp</dimen>
+    <dimen name="height32">32dp</dimen>
+    <dimen name="height35">35dp</dimen>
+    <dimen name="height42">42dp</dimen>
+    <dimen name="height46">46dp</dimen>
+    <dimen name="height48">48dp</dimen>
+    <dimen name="height55">55dp</dimen>
+    <dimen name="height75">75dp</dimen>
+    <dimen name="height150">150dp</dimen>
+    <dimen name="height170">170dp</dimen>
+    <dimen name="height300">300dp</dimen>
+
+    <dimen name="card_radius">3dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- The default letter tile text size -->
+    <dimen name="tile_letter_font_size">28sp</dimen>
+    <!-- The deafult tile size -->
+    <dimen name="letter_tile_size">48dp</dimen>
+
+
+    <dimen name="card_elevation">5dp</dimen>
+
+    <dimen name="margin_small">5dp</dimen>
+    <dimen name="margin_normal">10dp</dimen>
+    <dimen name="margin_large">15dp</dimen>
+    <dimen name="margin_left_facebook">60dp</dimen>
+    <dimen name="margin_right_facebook">50dp</dimen>
+    <dimen name="padding_xxxsmall">2dp</dimen>
+    <dimen name="padding_xxsmall">3dp</dimen>
+    <dimen name="padding_xsmall">5dp</dimen>
+    <dimen name="padding_small">5dp</dimen>
+    <dimen name="padding_normal">10dp</dimen>
+    <dimen name="padding_large">15dp</dimen>
+    <dimen name="padding_xlarge">20dp</dimen>
+    <dimen name="padding_xxlarge">35dp</dimen>
+    <dimen name="padding_xxxlarge">50dp</dimen>
+    <dimen name="padding_login">60dp</dimen>
+    <dimen name="navigation_drawer_width">240dp</dimen>
+    <dimen name="ts_xlarge">22sp</dimen>
+    <dimen name="ts_large">20sp</dimen>
+    <dimen name="ts_xnormal">18sp</dimen>
+    <dimen name="ts_normal">15sp</dimen>
+    <dimen name="ts_small">12sp</dimen>
+    <dimen name="ts_xsmall">10sp</dimen>
+    <dimen name="ts_xxsmall">8sp</dimen>
+    <dimen name="tab_width">90dp</dimen>
+    <dimen name="padding_search">140dp</dimen>
+    <dimen name="padding_search_ptp">80dp</dimen>
+    <dimen name="profile_pic_width">50dp</dimen>
+    <dimen name="list_item_photographer_height">280dp</dimen>
+    <dimen name="chat_profile_pic_width">25dp</dimen>
+    <dimen name="youtubechat_profile_pic_width">40dp</dimen>
+
+    <dimen name="card_left_margin">16dp</dimen>
+    <dimen name="ten_dp">10dp</dimen>
+
+    <!--floating action button-->
+    <dimen name="fab_margin_right">20dp</dimen>
+    <dimen name="fab_margin_top">1dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="fab_size_normal">56dp</dimen>
+    <dimen name="fab_size_mini">40dp</dimen>
+
+    <dimen name="fab_icon_size">24dp</dimen>
+
+    <dimen name="fab_plus_icon_size">14dp</dimen>
+    <dimen name="fab_plus_icon_stroke">2dp</dimen>
+
+    <dimen name="fab_shadow_offset">3dp</dimen>
+    <dimen name="fab_shadow_radius">9dp</dimen>
+
+    <dimen name="fab_stroke_width">1dp</dimen>
+
+    <dimen name="fab_actions_spacing">16dp</dimen>
+    <dimen name="fab_labels_margin">8dp</dimen>
+    <integer name="transaction_leanth">60</integer>
+
+    <dimen name="color_picker__bg_drawable_stroke">2dp</dimen>
+    <dimen name="profile_pic_diameter">40dp</dimen>
+    <dimen name="profile_pic_diameter_chat">50dp</dimen>
+    <dimen name="request_btn_width">100dp</dimen>
+    <dimen name="emoji_pager_tab_height">50dp</dimen>
+</resources>

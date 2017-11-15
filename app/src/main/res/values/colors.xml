@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="white_transparent">#ccffffff</color>
+    <color name="black_overlay_light">#33000000</color>
+    <color name="recorded_popup_overlay">#a0000000</color>
+    <color name="text_hint_color">#80ffffff</color>
+    <color name="black_overlay">#99000000</color>
+    <color name="user_profile_black_overlay">#a0000000</color>
+    <color name="notification_icon_background">#9900FF</color>
+    <color name="profileImage_black_overlay">#95000000</color>
+    <color name="icon_black_overlay">#66000000</color>
+    <color name="instalively_color_primary">#212121</color>
+    <color name="instalively_color_primary_dark">#212121</color>
+    <color name="instalively_accent">#ff0000</color>
+    <color name="instalively_yellow">#ffffeb25</color>
+    <color name="instalively_blue">#ff2f49ff</color>
+    <color name="tw__light_gray">#ccd6dd</color>
+    <color name="text_shadow">#000000</color>
+    <color name="pulse_theme_color">#9900FF</color>
+
+    <color name="filter_highlight_color">#00ffff</color>
+    <color name="hightlight_color">#ff0000</color>
+
+    <color name="instalively_theme">#212121</color>
+    <color name="instalively_red">#ff0000</color>
+    <color name="instalively_green">#00FF00</color>
+    <color name="instalively_red_pressed">#ff0000</color>
+
+    <color name="background_tab_pressed">#6633B5E5</color>
+
+    <color name="fb_normal">#3b5998</color>
+    <color name="fb_pressed">#36528c</color>
+    <color name="tw_normal">#3bcbff</color>
+    <color name="tw_pressed">#34baea</color>
+    <color name="wt_normal">#00b433</color>
+    <color name="wt_pressed">#019e2e</color>
+    <color name="mail_normal">#078c00</color>
+    <color name="mail_pressed">#087802</color>
+    <color name="following_text">#7a7a7a</color>
+    <color name="liked_text">#4898d6</color>
+
+    <color name="user_profile_grey">#2b2b2b</color>
+    <color name="user_profile_text_grey">#696969</color>
+    <color name="user_profile_active_text">#090909</color>
+    <!--<color name="pulse_gray">#164D2D82</color>-->
+    <color name="pulse_gray">#F1EFF5</color>
+    <color name="pulse_dark_violet">#3A067B</color>
+    <color name="pulse_light_violet">#6D11AC</color>
+
+    <color name="pulse_button_color">#9900FF</color>
+    <color name="pulse_pressed_button_color">#6D11AC</color>
+    <color name="settings_separator">#1f000000</color>
+
+    <color name="pulse_unselect_color">#42010101</color>
+
+    <!--<color name="ascentColor">#9900FF</color>-->
+    <color name="pulse_pressed_red_color">#ff1212</color>
+    <color name="pulse_row_selected_color">#0d9900ff</color>
+
+    <color name="toast_yellow">#f9eb59</color>
+
+</resources>

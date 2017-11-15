@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/action_bar"
+        layout="@layout/pulse_action_bar" />
+
+    <com.pulseapp.android.customTextViews.MontserratRegularTextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/action_bar"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:alpha="0.87"
+        android:text="@string/institution_banner_text"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+    <!--{@see} canvas_fragment.xml for info />-->
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-10000dp"
+        android:layout_marginStart="20dp" />
+
+    <EditText
+        android:id="@+id/et_institution"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:hint="Name your institution"
+        android:paddingBottom="15dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:id="@+id/iv_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/et_institution"
+        android:layout_alignTop="@+id/et_institution"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/clear_icon_svg" />
+
+    <ListView
+        android:id="@+id/lv_institute"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/et_institution"
+        android:layout_margin="16dp" />
+
+</RelativeLayout>

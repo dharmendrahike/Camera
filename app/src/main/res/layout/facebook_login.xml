@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/facebook_login_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/skipTV"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="end"-->
+        <!--android:layout_marginEnd="16dp"-->
+        <!--android:layout_marginTop="40dp"-->
+        <!--android:text="Skip"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:textSize="12sp" />-->
+
+    <LinearLayout
+        android:visibility="invisible"
+        android:id="@+id/dotsContainerLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="4dp"
+            app:srcCompat="@drawable/selected_fill_svg" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/selected_fill_svg"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="4dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            app:srcCompat="@drawable/selected_fill_svg"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="4dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            app:srcCompat="@drawable/selected_fill_svg"
+            android:layout_marginStart="4dp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/progressView"
+        android:background="#80000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+</FrameLayout>

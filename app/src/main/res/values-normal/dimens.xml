@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!--<dimen name="padding_small">10dp</dimen>-->
+    <!--<dimen name="activity_vertical_margin">16dp</dimen>-->
+    <!--<dimen name="navigation_drawer_width">240dp</dimen>-->
+    <!--<dimen name="ts_normal">15sp</dimen>-->
+
+
+    <!--<dimen name="padding_small">7dp</dimen>-->
+  <!--  <dimen name="padding_normal">15dp</dimen>
+    <dimen name="padding_large">20dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="navigation_drawer_width">240dp</dimen>
+    <dimen name="ts_xlarge">40sp</dimen>
+    <dimen name="ts_large">30sp</dimen>
+    <dimen name="ts_normal">15sp</dimen>
+    <dimen name="ts_small">15sp</dimen>
+    <dimen name="tab_width">90dp</dimen>-->
+
+    <dimen name="card_elevation">5dp</dimen>
+    <dimen name="margin_small">0dp</dimen>
+    <dimen name="margin_normal">0dp</dimen>
+    <dimen name="margin_large">10dp</dimen>
+    <dimen name="margin_left_facebook">60dp</dimen>
+    <dimen name="margin_right_facebook">40dp</dimen>
+  <dimen name="padding_xxxsmall">2dp</dimen>
+  <dimen name="padding_xxsmall">3dp</dimen>
+  <dimen name="padding_xsmall">5dp</dimen>
+  <dimen name="padding_small">5dp</dimen>
+  <dimen name="padding_lnormal">8dp</dimen>
+  <dimen name="padding_normal">10dp</dimen>
+  <dimen name="padding_large">15dp</dimen>
+  <dimen name="padding_xlarge">20dp</dimen>
+  <dimen name="padding_xxlarge">35dp</dimen>
+  <dimen name="padding_xxxlarge">50dp</dimen>
+  <dimen name="padding_login">60dp</dimen>
+  <dimen name="activity_vertical_margin">16dp</dimen>
+  <dimen name="navigation_drawer_width">240dp</dimen>
+  <dimen name="ts_xxxxlarge">28sp</dimen>
+  <dimen name="ts_xxxlarge">25sp</dimen>
+  <dimen name="ts_xxlarge">20sp</dimen>
+  <dimen name="ts_xlarge">18sp</dimen>
+  <dimen name="ts_large">16sp</dimen>
+  <dimen name="ts_xnormal">15sp</dimen>
+  <dimen name="ts_nnormal">13sp</dimen>
+  <dimen name="ts_normal">12sp</dimen>
+  <dimen name="ts_lnormal">11sp</dimen>
+  <dimen name="ts_small">10sp</dimen>
+  <dimen name="ts_xsmall">8sp</dimen>
+  <dimen name="ts_xxsmall">6sp</dimen>
+  <dimen name="tab_width">90dp</dimen>
+  <dimen name="padding_search">140dp</dimen>
+  <dimen name="padding_search_ptp">80dp</dimen>
+  <dimen name="profile_pic_width">45dp</dimen>
+  <dimen name="chat_profile_pic_width">40dp</dimen>
+  <dimen name="list_item_photographer_height">280dp</dimen>
+  <dimen name="fab_margin_right">20dp</dimen>
+  <dimen name="fab_margin_top">1dp</dimen>
+  <dimen name="youtubechat_profile_pic_width">40dp</dimen>
+  <dimen name="small_chat_profile_pic_width">34dp</dimen>
+</resources>

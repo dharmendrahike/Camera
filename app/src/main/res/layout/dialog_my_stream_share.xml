@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootView"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/tintFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:background="#80000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/popupView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/profile_popup_rounded_corners"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:id="@+id/ll_header_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_top_corners">
+
+                <com.pulseapp.android.customTextViews.MontserratRegularTextView
+                    android:id="@+id/tv_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:alpha="0.87"
+                    android:text="Add to My Stream?"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <com.pulseapp.android.customTextViews.MontserratRegularTextView
+                android:id="@+id/tv_dialog_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_header_container"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:alpha="0.87"
+                android:text="@string/add_image_string"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/dont_show_again_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_dialog_body"
+                android:button="@drawable/abc_btn_check_material"
+                android:layout_marginStart="16dp" />
+
+            <com.pulseapp.android.customTextViews.MontserratRegularTextView
+                android:id="@+id/checkbox_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/dont_show_again_checkbox"
+                android:layout_alignTop="@+id/dont_show_again_checkbox"
+                android:layout_below="@+id/tv_dialog_body"
+                android:layout_marginStart="15dp"
+                android:layout_toRightOf="@+id/dont_show_again_checkbox"
+                android:alpha="0.87"
+                android:gravity="center"
+                android:text="Don’t show again"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+
+            <com.pulseapp.android.customTextViews.MontserratRegularTextView
+                android:id="@+id/btn_positive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/dont_show_again_checkbox"
+                android:paddingBottom="10dp"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:paddingTop="10dp"
+                android:text="Got It"
+                android:textAllCaps="true"
+                android:textColor="@color/pulse_button_color"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

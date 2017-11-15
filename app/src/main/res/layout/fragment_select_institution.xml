@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pulse_center_gradient"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/skipTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end"
+        android:layout_marginTop="24dp"
+        android:padding="16dp"
+        android:text="Skip"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/schoolIV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/school" />
+
+        <com.pulseapp.android.customTextViews.Museo700TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Want your exclusive\n campus stickers?"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/school_1_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/schoolIV"
+        android:elevation="4dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/purple_button"
+        android:gravity="center"
+        android:text="Add your school/college"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <com.pulseapp.android.customTextViews.MontserratRegularTextView
+        android:id="@+id/school_2_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/school_1_TV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:alpha="0.8"
+        android:visibility="gone"
+        android:text="@string/add_institution_description"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+
+
+    <HorizontalScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/schoolET"
+        android:layout_marginTop="24dp"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/suggestionLL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone" />
+    </HorizontalScrollView>
+
+    <com.pulseapp.android.util.OverRideBackEventEditText
+        android:id="@+id/schoolET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/school_2_TV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/transparent"
+        android:hint="Name your institution"
+        android:imeOptions="actionSearch"
+        android:inputType="textEmailAddress|textEmailSubject"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="#80FFFFFF"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/instituteSelectedLL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/school_2_TV"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_marginTop="32dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/instituteSelectedTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delhi Public"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/cancelIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            app:srcCompat="@drawable/clear_svg_small" />
+    </LinearLayout>
+
+    <com.pulseapp.android.customTextViews.MontserratRegularTextView
+        android:id="@+id/nextPageTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pulse_light_violet"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="READY? LETS GET STARTED"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:layout_marginTop="316dp"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

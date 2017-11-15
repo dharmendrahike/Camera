@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "820115401788",
+    "firebase_url": "https://glaring-heat-48.firebaseio.com",
+    "project_id": "glaring-heat-48",
+    "storage_bucket": "glaring-heat-48.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:820115401788:android:e83bff1ca0d912e8",
+        "android_client_info": {
+          "package_name": "com.pulseapp.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "820115401788-gjhcffhl2tneq24due2lgeevqjp4d05i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALpmftGspCf_kd4cBkb_jXz27u5cYitAI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:820115401788:android:3c698e0a0dd95678",
+        "android_client_info": {
+          "package_name": "com.pulseapp.android.testing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "820115401788-gjhcffhl2tneq24due2lgeevqjp4d05i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALpmftGspCf_kd4cBkb_jXz27u5cYitAI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

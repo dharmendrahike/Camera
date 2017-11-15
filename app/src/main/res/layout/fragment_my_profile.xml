@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/background_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.7"
+            android:background="#a22d2d2d"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/gettingReadyTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="25dp"
+                android:text="GET YOUR PROFILE READY"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+            <RelativeLayout
+                android:id="@+id/profile_image_layout"
+                android:layout_width="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/defaultIV"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:scaleType="fitCenter" />
+                <ImageButton
+                    android:id="@+id/btn_edit_profile_image"
+                    style="@style/RoundedButtonCameraColor"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignTop="@+id/defaultIV"
+                    android:layout_alignRight="@+id/defaultIV"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="-5dp"
+                    android:padding="5dp"
+                    android:scaleType="fitCenter" />
+            </RelativeLayout>
+            <EditText
+                android:id="@+id/nameTV"
+                android:background="@android:color/transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="5dp"
+                android:focusable="true"
+                android:inputType="textNoSuggestions"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="YOUR NAME"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+            <EditText
+                android:id="@+id/aboutMeTV"
+                android:background="@android:color/transparent"
+                android:drawablePadding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textNoSuggestions"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:alpha="0.8"
+            android:id="@+id/borderView"
+            android:layout_above="@+id/bottomLayout"
+            android:background="@color/white" />
+        <LinearLayout
+            android:id="@+id/bottomLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:background="#30000000"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/nextPageTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Yes, my profile looks fine"
+                android:textColor="@color/white" />
+        </LinearLayout>
+</RelativeLayout>

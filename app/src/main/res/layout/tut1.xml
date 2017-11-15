@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="48dp"
+    android:layout_marginEnd="48dp"
+    android:background="@drawable/rounded_left_right"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.pulseapp.android.customTextViews.MontserratBoldTextView
+            android:text="TAP"
+            android:textAllCaps="true"
+            android:textColor="@color/toast_yellow"
+            android:textSize="11sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            app:srcCompat="@drawable/camera_ic_tut_svg"/>
+
+        <com.pulseapp.android.customTextViews.MontserratRegularTextView
+            android:text="for photo,"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.pulseapp.android.customTextViews.MontserratBoldTextView
+            android:text="HOLD"
+            android:textAllCaps="true"
+            android:textColor="@color/toast_yellow"
+            android:textSize="11sp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.pulseapp.android.customTextViews.MontserratRegularTextView
+            android:text="for video"
+            android:textSize="11sp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>

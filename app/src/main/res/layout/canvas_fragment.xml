@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.codetail.widget.RevealFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/revealView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/bitmapLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/backgroundColorLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.pulseapp.android.stickers.ScribbleView
+                    android:id="@+id/scribbleView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <!--This Edit Text is a workaround to avoid
+                  getting unnecessary focus on the EditTextBackEvent because
+                  when the focus is manually removed from EditTextBackEvent;
+                  It again gains the focus because the framework forces
+                  the first view from top to have focus ,
+                  having this dummy editText fools the systems and we can safely
+                  assume that focus will not come until and  unless
+                  explicitly specified
+                  todo a better solution..?-->
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-10000dp"
+                    android:layout_marginStart="20dp" />
+
+                <com.pulseapp.android.util.EditTextBackEvent
+                    android:id="@+id/textEditLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/say_something_hint"
+                    android:inputType="textNoSuggestions|textMultiLine"
+                    android:maxLength="140"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="#80ffffff"
+                    android:textSize="24sp" />
+            </RelativeLayout>
+        </FrameLayout>
+
+
+        <com.pulseapp.android.customViews.OvalColorPicker
+            android:id="@+id/ovalColorPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="56dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/save_IV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="8dp"
+            android:padding="16dp"
+            android:src="@drawable/save"
+            android:visibility="gone"
+            app:srcCompat="@drawable/download_svg" />
+
+        <ImageView
+            android:id="@+id/addToMoment_IV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:padding="10dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/new_send_svg" />
+
+        <ImageView
+            android:id="@+id/addToStream"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:padding="10dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/add_to_my_story_svg" />
+
+
+        <ImageView
+            android:id="@+id/shareToWhatsApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:padding="10dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/whatspp_svg" />
+
+        <!--<ImageView-->
+        <!--android:id="@+id/hideCanvas"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="bottom|end"-->
+        <!--android:padding="10dp"-->
+        <!--android:src="@android:drawable/ic_media_ff" />-->
+
+
+        <com.pulseapp.android.floatingbutton.FloatingActionButton
+            android:id="@+id/hideCanvas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="16dp"
+            android:scaleType="centerInside"
+            fab:fab_icon="@drawable/camera_canvas" />
+
+        <ImageView
+            android:id="@+id/closeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/clear_svg" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/progressFram"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+</io.codetail.widget.RevealFrameLayout>

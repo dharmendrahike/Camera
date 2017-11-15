@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_facebook_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pulse_center_gradient"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:layout_marginEnd="16dp"-->
+    <!--android:layout_marginTop="40dp"-->
+    <!--android:text="Skip"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:textSize="12sp" />-->
+    <TextView
+        android:id="@+id/skipTV"
+        android:padding="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="24dp"
+        android:alpha="0.67"
+        android:layout_alignParentEnd="true"
+        android:text="Skip"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+    <ImageView
+        android:id="@+id/pulseIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="162dp"
+        app:srcCompat="@drawable/logo_svg" />
+
+    <TextView
+        android:id="@+id/pulseTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pulseIV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:text="PULSE"
+        android:textColor="@android:color/white"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/subheaderTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pulseTV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:alpha="0.87"
+        android:gravity="center"
+        android:text="Discover and share happenings\naround you."
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+    <ImageView
+        android:id="@+id/slideIV"
+        android:layout_width="wrap_content"
+        android:layout_toEndOf="@+id/slideTV"
+        android:rotation="180"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:layout_below="@id/subheaderTV"
+        android:visibility="gone"
+        app:srcCompat="@drawable/arr_svg"/>
+
+    <TextView
+        android:id="@+id/slideTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subheaderTV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:paddingRight="10dp"
+        android:alpha="0.53"
+        android:gravity="center"
+        android:text="Swipe to connect with your Friends"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/facebookButtonLL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="72dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingBottom="15dp"
+            android:paddingEnd="24dp"
+            android:paddingStart="24dp"
+            android:id="@+id/facebookLogin"
+            android:paddingTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/facebook_button">
+
+            <ImageView
+                android:layout_marginEnd="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add"
+                app:srcCompat="@drawable/fb_svg" />
+
+            <TextView
+                android:id="@+id/facebookBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Connect with your friends"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/neverPostTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:alpha="0.54"
+            android:text="We NEVER post without your permission"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>

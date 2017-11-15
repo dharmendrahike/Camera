@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/holder"
+    xmlns:CircleProgressView="http://schemas.android.com/apk/res-auto"
+    android:layout_marginEnd="8dp"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/imagesContainerFrame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/profileIV"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:background="@drawable/moment_circle_background"
+            android:src="@drawable/moment_circle_background" />
+
+        <at.grabner.circleprogress.CircleProgressView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:id="@+id/circular_progress_bar"
+            CircleProgressView:cpv_seekMode="false"
+            CircleProgressView:cpv_startAngle="0"
+            CircleProgressView:cpv_rimColor="@android:color/transparent"
+            CircleProgressView:cpv_rimWidth="0dp"
+            CircleProgressView:cpv_fillColor="@android:color/transparent"
+            CircleProgressView:cpv_showUnit="false"
+            CircleProgressView:cpv_showTextInSpinningMode="false"
+            CircleProgressView:cpv_barWidth="3dp"
+            CircleProgressView:cpv_barColor="@android:color/transparent"
+            CircleProgressView:cpv_maxValue="360"
+            CircleProgressView:cpv_contourSize="0dp"
+            CircleProgressView:cpv_contourColor="@android:color/transparent" />
+
+        <!--As the timer will be drawn onto aa canvas
+        hence its dimensions will be bitmap dependent;
+        Now  we have no guarantee of the images loaded from
+        Url of being same resolutions hence the timer/progress
+        canvas returns different pics for each resolutions.
+        To overcome this we use an entirely different imageView-->
+        <ImageView
+            android:id="@+id/timerIV"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:scaleType="fitXY" />
+
+
+        <ImageView
+        android:id="@+id/rippleIv1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:background="@drawable/moment_download_ring"
+        android:scaleType="fitXY"
+        android:visibility="gone" />
+
+        <ImageView
+        android:id="@+id/rippleIv2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:background="@drawable/moment_download_ring"
+        android:visibility="gone" />
+        <ProgressBar
+            android:id="@+id/loader"
+            android:background="@color/transparent"
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:alpha="0.7"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <com.pulseapp.android.customTextViews.MontserratRegularTextView
+        android:id="@+id/nameTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dp"
+        android:ellipsize="end"
+        android:gravity="center_horizontal|top"
+        android:maxLines="1"
+        android:maxWidth="70dp"
+        android:text="Karthik Vaidyanath"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+
+    <com.pulseapp.android.customTextViews.MontserratRegularTextView
+        android:id="@+id/updatedAtTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:alpha="0.54"
+        android:gravity="center"
+        android:text="5 min"
+        android:textColor="@android:color/black"
+        android:textSize="10sp" />
+</LinearLayout>

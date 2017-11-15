@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pulse_center_gradient"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        app:srcCompat="@drawable/stroke_svg" />
+
+    <ImageView
+        android:id="@+id/chooseUserNameIV"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp" />
+
+    <com.pulseapp.android.customTextViews.MontserratRegularTextView
+        android:gravity="center"
+        android:id="@+id/helloUserNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chooseUserNameIV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Hello"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/chooseUserNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/helloUserNameTV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:alpha="0.53"
+        android:text="Please choose a username"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/chooseUserNameET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chooseUserNameTV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:background="@null"
+        android:imeOptions="actionDone"
+        android:imeActionLabel="DONE"
+        android:inputType="textPersonName"
+        android:minWidth="40dp"
+        android:textColor="@android:color/white"
+        android:singleLine="true"
+        android:textColorHint="#80FFFFFF"
+        android:textSize="24sp" />
+
+    <com.pulseapp.android.customTextViews.MontserratSemiBoldTextView
+        android:id="@+id/nextPageTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/pulse_button_color"
+        android:gravity="center"
+        android:visibility="gone"
+        android:padding="20dp"
+        android:text="GET STARTED"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="2dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:background="@android:color/white"
+    android:gravity="end"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <FrameLayout
+        android:id="@+id/messageDataFrame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sent_message__blue_bg"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.pulseapp.android.customTextViews.MontserratRegularTextView
+                android:id="@+id/sender_nameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="0dp"
+                android:text="Name"
+                android:textSize="11sp"
+                tools:ignore="SmallSp" />
+
+            <FrameLayout
+                android:id="@+id/mediaFrame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/media_image_IV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/app_gradient" />
+
+                <ProgressBar
+                    android:id="@+id/loader_Progress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_gravity="center" />
+            </FrameLayout>
+
+            <com.pulseapp.android.customTextViews.MontserratRegularTextView
+                android:id="@+id/chatStringTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.87"
+                android:maxWidth="212dp"
+                android:minWidth="80dp"
+                android:padding="0dp"
+                android:text="@string/dummy_long_string"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <com.pulseapp.android.customTextViews.MontserratRegularTextView
+                android:id="@+id/updatedAtTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:alpha="0.37"
+                android:layout_marginEnd="0dp"
+                android:paddingStart="10dp"
+                android:text="time"
+                android:textColor="@android:color/black"
+                android:textSize="11sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

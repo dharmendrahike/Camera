@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/nostream_svg" />
+
+    <com.pulseapp.android.customTextViews.MontserratRegularTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:alpha="0.87"
+        android:padding="4dp"
+        android:text="You have no interactions yet."
+        android:textColor="@android:color/black"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <com.pulseapp.android.customTextViews.MontserratRegularTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.54"
+        android:gravity="center"
+        android:text="Send photos/videos directly to your friends. \n Only the people you send to can see these messages. "
+        android:textSize="12sp" />
+
+
+    <com.pulseapp.android.customTextViews.MontserratSemiBoldTextView
+        android:id="@+id/add_friendBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/pulse_button_rounded_corner"
+        android:paddingBottom="8dp"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:text="@string/add_friends_text"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+</LinearLayout>

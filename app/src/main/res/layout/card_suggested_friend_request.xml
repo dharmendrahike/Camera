@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="@android:color/white"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/profilePicIV"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/moment_circle_background" />
+
+    <com.pulseapp.android.customTextViews.MontserratRegularTextView
+        android:textColor="@android:color/black"
+        android:id="@+id/cardNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/profilePicIV"
+        android:text="Name"
+        android:alpha="0.87"
+        android:textSize="13sp" />
+
+    <com.pulseapp.android.customTextViews.MontserratRegularTextView
+        android:textColor="@android:color/black"
+        android:textSize="11sp"
+        android:id="@+id/cardHandleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardNameTV"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/profilePicIV"
+        android:alpha="0.54"
+        android:text="handle" />
+
+    <ImageView
+        android:id="@+id/friendSelectedIV"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:paddingEnd="16dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="72dp"
+        android:alpha="0.11"
+        android:background="@android:color/black" />
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/articleRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pulse_gray" />
+
+    <com.pulseapp.android.customTextViews.MontserratRegularTextView
+        android:id="@+id/aroundYouHeaderTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="12dp"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:text="@string/around_you_text"
+        android:textColor="@color/pulse_theme_color"
+        android:textSize="11sp" />
+
+    <com.pulseapp.android.customTextViews.MontserratRegularTextView
+        android:id="@+id/locationBtn"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="@color/pulse_button_color"
+        android:gravity="center"
+        android:text="Tap to see nearby streams"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/nearbyRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/pulse_gray"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+</LinearLayout>

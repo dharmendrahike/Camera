@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/action_bar"
+        layout="@layout/pulse_action_bar" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_no_block_friends"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/block" />
+
+        <com.pulseapp.android.customTextViews.MontserratRegularTextView
+            android:textSize="13sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:text="No Blocked Friends"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.pulseapp.android.customTextViews.MontserratRegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.54"
+            android:gravity="center"
+            android:text="Yay! You haven't blocked anyone."
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_blocked_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/action_bar">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>

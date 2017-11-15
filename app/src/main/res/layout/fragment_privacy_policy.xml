@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/action_bar"
+        layout="@layout/pulse_action_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/action_bar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.pulseapp.android.customTextViews.MontserratRegularTextView
+                android:id="@+id/tv_header_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:alpha="0.87"
+                android:text="@string/privacy_policy_header1"
+                android:textSize="13sp" />
+
+            <com.pulseapp.android.customTextViews.MontserratRegularTextView
+                android:id="@+id/tv_policy_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_header_1"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="6dp"
+                android:alpha="0.54"
+                android:text="@string/policy_text"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/action_bar"
+        layout="@layout/pulse_action_bar" />
+
+    <com.pulseapp.android.customTextViews.MontserratRegularTextView
+        android:id="@+id/tv_header_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/action_bar"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:alpha="0.87"
+        android:text="@string/receive_from_text"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_header_1"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/rb_anyone"
+            style="@style/CustomCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/receive_from_anyone"
+            android:textSize="13sp" />
+
+        <RadioButton
+            android:id="@+id/rb_all_friends"
+            style="@style/CustomCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="@string/receive_from_all_friends"
+            android:textSize="13sp" />
+
+        <RadioButton
+            android:id="@+id/rb_all_friends_except"
+            style="@style/CustomCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:visibility="gone"
+            android:text="@string/receive_from_all_except"
+            android:textSize="13sp" />
+
+    </RadioGroup>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/friends_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/radioGroup"
+        android:layout_marginTop="16dp"
+        android:visibility="gone">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<item
+        android:drawable="@drawable/pulse_center_gradient"
+        android:gravity="fill" />
+<!--<item>-->
+    <!--<bitmap xmlns:app="http://schemas.android.com/apk/res-auto"-->
+        <!--android:paddingLeft="20dp"-->
+        <!--android:paddingRight="20dp"-->
+        <!--android:paddingTop="20dp"-->
+        <!--android:paddingBottom="20dp"-->
+        <!--android:gravity="center"-->
+        <!--app:srcCompat="@drawable/logo_svg"/>-->
+    <!--&lt;!&ndash;<size android:width="98dp" android:height="108dp" />&ndash;&gt;-->
+<!--</item>-->
+</layer-list>

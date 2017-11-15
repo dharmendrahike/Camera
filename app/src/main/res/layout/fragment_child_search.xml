@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/pulse_gray"
+    android:orientation="vertical">
+
+    <!--<com.pulseapp.android.customTextViews.MontserratRegularTextView-->
+        <!--android:id="@+id/headerTV"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:alpha="0.71"-->
+        <!--android:paddingBottom="12dp"-->
+        <!--android:paddingStart="16dp"-->
+        <!--android:paddingTop="16dp"-->
+        <!--android:text="GROUPS"-->
+        <!--android:textColor="@android:color/black"-->
+        <!--android:textSize="12sp" />-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white" />
+</LinearLayout>

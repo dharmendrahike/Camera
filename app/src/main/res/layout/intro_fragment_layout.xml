@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/rl_intro_login"
+    android:gravity="center_horizontal">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/background">
+    </RelativeLayout>
+<!--
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/backgroundElementLayout"
+        android:background="@drawable/tutorial1_background_element">
+    </RelativeLayout>
+-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_image"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomLayout"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal">
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/dotsLayout"-->
+            <!--android:visibility="gone"-->
+            <!--android:layout_marginBottom="15dp"-->
+            <!--android:gravity="center_horizontal|center_vertical"-->
+            <!--android:orientation="horizontal">-->
+        <!--</LinearLayout>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleText"
+            android:text="DISCOVER"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="5dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/descriptionText"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginBottom="25dp"
+            android:text="Discover nearby content and watch popular streams." />
+        <!--        <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/subDescriptionText"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="12sp"
+                    android:text="All from the dashboard."
+                    android:layout_marginBottom="10dp" />-->
+    </LinearLayout>
+</RelativeLayout>

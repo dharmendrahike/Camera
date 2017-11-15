@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="start_interacting">Start interacting here...</string>
+
+    <string name="gp_apikey">AIzaSyAxZkRzjL5SZLRE-SloHlqO6RqEQzWCuYk</string>
+    <string name="apikey">AIzaSyCOeOhrdhcQciZkNMa7NpbbRnphwBsD9SY</string>
+    <!--<string name="gp_apikey">AIzaSyDPXhrm_4jwmxbH-jZzOXhUdYEyYbzOyTc</string>-->
+    <!--<string name="app_name">Pulse</string>-->
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="inactive">Inactive</string>
+    <string name="testing">Testing</string>
+    <string name="going_live">Going Live</string>
+    <string name="active">Active</string>
+    <string name="live">LIVE</string>
+    <string name="session_early_start_prompt">You can start broadcasting 30 minutes before session start time..</string>
+    <string name="session_testing_prompt">There is still time to start broadcasting, you can test till then..</string>
+    <string name="session_late_start_prompt">Session had already begin.</string>
+    <string-array name="intro_text">
+        <item>InstaLively gives you the power of going Live on the move</item>
+        <item>Google sign in syncs up with your YouTube account</item>
+        <item>Share your experience with the world via social media</item>
+    </string-array>
+    <string name="facebook_app_id">582666665271675</string>
+    <string name="youtube_text_1">InstaLively syncs with your Youtube account. And Youtube requires
+        you to verify that account is in good standing to Livestream.</string>
+    <string name="youtube_text_2">This is a ONE-TIME VERIFICATION PROCESS. Please bear with it just
+        once. Its worth it, we promise!</string>
+    <string name="youtube_terms">These terms regarding live streaming (the "Terms") are for you, the content provider that has contracted with Google ("You"), through the Content License Agreement, Content Hosting Services Agreement, Sound Recording and Audiovisual Agreement, Channel Distribution Agreement and/or the YouTube Terms of Service (any of which are referred to below as the "Agreement"). Through the live streaming account feature, You may live stream content (the "Live Content") through Your YouTube channel and You may be provided with the option of archiving the Live Content for subsequent viewing (the "Archived Content"). The Live Content must comply with the YouTube Community Guidelines. Notwithstanding anything to the contrary in the Agreement, You represent and warrant that You have all necessary rights for the exploitation of the Live Content on the Google Services throughout the world, including, without limitation, music licensing rights from artists, record labels, publishers (including public performance licenses) and any other royalty participants. You agree to comply with all applicable laws, rules and regulations regarding the Live Content. The Live Content and the Archived Content, if any, will constitute "Provider Content," "Original Channel Content," or "Your Content" as applicable, pursuant to your Agreement with Google and are subject to the terms of that Agreement.</string>
+
+
+    <!-- Icons -->
+    <string name="icon_switch_camera">&#xe611;</string>
+    <string name="icon_flash_off">&#xe60a;</string>
+    <string name="icon_flash_auto">&#xe602;</string>
+    <string name="icon_flash_on">&#xe609;</string>
+    <string name="icon_flash_torch">&#xe600;</string>
+    <string name="icon_drawer_open">&#xe60d;</string>
+    <string name="icon_drawer_close">&#xe60e;</string>
+    <string name="icon_zoom">&#xe612;</string>
+    <string name="icon_filters">&#xe608;</string>
+
+    <string name="icon_color_effect">&#xe606;</string>
+    <string name="icon_white_effect">&#xe603;</string>
+    <string name="icon_exposure">&#xe607;</string>
+    <string name="icon_focus_mode">&#xe60b;</string>
+    <string name="icon_scene_mode">&#xe60f;</string>
+
+    <string name="icon_swipe_up">&#xe613;</string>
+    <string name="icon_swipe_down">&#xe601;</string>
+    <string name="icon_share">&#xe610;</string>
+    <string name="icon_inactive">&#xe60c;</string>
+    <string name="icon_active">&#xe614;</string>
+    <string name="icon_live">&#xe615;</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_enable_live_stream">EnableLiveStreamActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_logout">Logout</string>
+    <string name="title_activity_create_event">CreateEventActivity</string>
+    <string name="title_activity_social">SocialActivity</string>
+    <string name="title_activity_youtube_player">InstaLively</string>
+
+    <string name="slide_2_title">Discover</string>
+    <string name="slide_3_title">Interact</string>
+    <string name="slide_4_title">Stream</string>
+    <string name="slide_5_title">Share</string>
+
+    <string name="slide_2_desc">Discover nearby content or watch popular streams.</string>
+    <string name="slide_3_desc">Interact with creators and follow to them.</string>
+    <string name="slide_4_desc">Tilt your phone to go Live.</string>
+    <string name="slide_5_desc">Share public streams on your social network.</string>
+
+    <string name="slide_2_innerDesc">All from the Dashboard.</string>
+    <string name="slide_3_innerDesc">Share your favourite streams.</string>
+    <string name="slide_4_innerDesc">Streams get saved on your youtube channel.</string>
+    <string name="slide_5_innerDesc">Share private streams with the people you want.</string>
+
+    <string name="logging_normal">Normal</string>
+
+    <string name="logging_verbose">Verbose</string>
+
+    <string name="retry">Retry</string>
+
+    <string name="off">[off]</string>
+
+    <string name="on">[on]</string>
+
+    <string name="drm_error_not_supported">Protected content not supported on API levels below 18</string>
+
+    <string name="drm_error_unsupported_scheme">This device does not support the required DRM scheme</string>
+
+    <string name="drm_error_unknown">An unknown DRM error occurred</string>
+
+    <string name="failed">Playback failed</string>
+    <string name="enable_background_audio">Play in background</string>
+
+    <!--Text Edit Fragment-->
+    <string name="say_something_hint">What\'s on your mind?</string>
+    <string name="search_friends">Search @userhandle</string>
+    <string name="search_friends_by_name">Search by Name</string>
+
+    <!--Share Media Fragment-->
+    <string name="share_text">SHARE</string>
+    <string name="share_desc_header">Post to My Stream</string>
+    <string name="share_desc_subheader">Items posted are broadcasted to friends for 24 hrs</string>
+
+    <string name="private_desc_header">SEND PRIVATE MESSAGE</string>
+    <string name="private_desc_subheader">Messages disappear forever after a fixed time</string>
+    <string name="moment_desc">My Moments</string>
+    <string name="moment_category">All friends</string>
+    <string name="share_media_quick_text">Quick peek</string>
+    <string name="share_media_view_once">View once</string>
+    <string name="share_media_view_day">View for a day</string>
+    <string name="recent_list_view_more">View more…</string>
+    <string name="recent_text">RECENT</string>
+    <string name="new_group_text">New Group</string>
+    <string name="create_group_text">CREATE GROUP</string>
+    <string name="manage_group_text">MANAGE GROUP</string>
+    <string name="save_text">SAVE</string>
+    <string name="create_group_edittext_hint">Name your Group</string>
+    <string name="existing_desc">EXISTING MEMBERS</string>
+    <string name="existing_desc_subheader">No members yet, please select a few friends</string>
+    <string name="add_members_desc">ADD MEMBERS</string>
+    <string name="add_friends_text">ADD FRIENDS</string>
+    <string name="friend_request_text">Friend Requests [</string>
+    <string name="setting_popup_header">Who do you want to share your moments with?</string>
+    <string name="all_friends_text">All Friends</string>
+    <string name="public_post_text">Public</string>
+    <string name="my_stream_text">My Stream</string>
+    <string name="except_friends_text">Friends except…</string>
+    <string name="custom_friend_list_text">Create Custom Friend List</string>
+    <string name="tap_to_view_double_to_chat">Tap to view Stream. Double tap to Chat</string>
+    <string name="recent_updates">RECENT UPDATES</string>
+    <string name="seen">SEEN</string>
+    <string name="my_streams">My Stream</string>
+    <string name="add_photo_video">+ Add Photos and Videos To Your Stream</string>
+    <string name="messages">Messages</string>
+    <string name="share_with_text">SHARE WITH</string>
+    <string name="custom_friend_list_header_text">CUSTOM FRIEND LIST</string>
+    <string name="to_text">To:</string>
+    <string name="except_text">Except:</string>
+    <string name="message_footer_text">TAP/DRAG to open</string>
+    <string name="sent_message_text">SENT MEDIA</string>
+
+    <string name="posting_media_text">Posting...</string>
+    <string name="tap_to_view_video">TAP TO VIEW VIDEO</string>
+    <string name="tap_to_view_image">TAP TO VIEW IMAGE</string>
+    <string name="posting_media_failed_text">Posting Failed. Tap to Retry</string>
+    <string name="message_sending_failed_text">Message Failed. Tap to Retry</string>
+
+    <string name="sent_media_text">SENT MEDIA</string>
+    <string name="opened_media_text">OPENED MEDIA</string>
+    <string name="delivered_media_text">DELIVERED MEDIA</string>
+
+    <!--Create Manage Group fragment-->
+    <string name="empty_group_name_error">You must define the group name</string>
+
+    <!--Moments activity and fragment text values-->
+    <string name="up_next_text">UP NEXT</string>
+
+    <string name="createListText">CREATE LIST</string>
+
+
+    <string name="friend_request">FRIEND REQUESTS</string>
+    <string name="around_you_text">&#8211; AROUND YOU &#8211;</string>
+    <string name="recent_update_text">&#8211; RECENT UPDATES &#8211;</string>
+    <string name="seen_text">&#8211; SEEN &#8211;</string>
+    <string name="dummy_long_string">Set a priority for the data at this database location.
+        A priority can be either a number or a string and is used to provide a custom ordering for the children
+        at a location (if no priorities are specified, the children are ordered by name). This ordering affects the enumeration order of DataSnapshot.forEach() as well as the prevChildName parameter passed to child_added and child_moved events.
+        You cannot set a priority on an empty location. For this reason, setWithPriority() should be used when setting initial data with a specific priority, and setPriority() should be used when updating the priority of existing data.</string>
+    <string name="share_using">Share Using</string>
+    <string name="enable_location">Allow Pulse to access this device location?</string>
+    <string name="confirm">Confirm</string>
+    <string name="ignore">Ignore</string>
+    <string name="settings_moments_text">Moments posted on your stream</string>
+    <string name="friends">Friends</string>
+    <string name="connections">Connections</string>
+    <string name="my_account">MY ACCOUNT</string>
+    <string name="name">Name</string>
+    <string name="username">Username</string>
+    <string name="birthday">Birthday</string>
+    <string name="privacy_header_text">PRIVACY</string>
+    <string name="push_notification">Push Notifications</string>
+    <string name="receive_from">Receive Messages from</string>
+    <string name="blocked">Blocked</string>
+    <string name="data_options_text">DATA OPTIONS</string>
+    <string name="travel_string">Travel Mode</string>
+    <string name="travel_subtext_string">Reduce Pulse’s mobile data usage. Just tap\nto load content like Moments and Streams\nwhen you’re on the go.</string>
+    <string name="auto_save_string">Auto Save Mode</string>
+    <string name="auto_save_subtext_string">Photos and videos you’ve taken will be\nsaved automatically to the Camera roll.</string>
+    <string name="more_info_string">MORE INFO</string>
+    <string name="support">Support</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms">Terms of Use</string>
+    <string name="account_actions_text">ACCOUNT ACTIONS</string>
+    <string name="logout">Log Out</string>
+    <string name="app_version">App Version</string>
+    <string name="clear_conversation">Clear Conversation</string>
+    <string name="name_change_text">This is how you appear on Pulse, so pick a name your friends know you by.</string>
+    <string name="birthday_text">Choose carefully - you can only change your\nbirthday a limited number of times.</string>
+    <string name="birthday_text_2">Birthday Party</string>
+    <string name="birthday_text_3">Adds an indicator next to your name on your birthday,\nallows friends to send you Birthday Moments,\nand some other fun surprises. This does not\nreveal your age to other Users.</string>
+    <string name="privacy_policy_header1">Pulse Privacy Policy</string>
+    <string name="policy_text">You are responsible for ensuring all content included\nin a Pulse Stream initiated by you complies with\nthis Agreement, including content provided by other\nparticipants who may join you in the Stream. Please\nchoose participants you wish to include to this stream\ncarefully.\n\nUnder no circumstances is Pulse to be held liable\nfor any content that is created by you and also for the\nissues in streaming caused by network issues, camera\nquality, phone compatibility or all of the above.\nPulse also holds rights to block or delete your\naccount if it believes that your account is being used\nfor malicious or unlawful purposes.\n\nBy using Pulse, you accept and agree to be bound\nby the Pulse terms of service.</string>
+    <string name="receive_from_text">Who is allowed to send me messages?</string>
+    <string name="receive_from_radiobtn_string">All Friends</string>
+    <string name="receive_from_anyone">Anyone</string>
+    <string name="receive_from_all_friends">All Friends</string>
+    <string name="receive_from_all_except">All Friends Except</string>
+    <string name="unblock">UNBLOCK</string>
+    <string name="create_friendlist_hint">Name your Friend List</string>
+    <string name="institute">Institution</string>
+    <string name="institution_banner_text">Which institution are you studying?</string>
+    <string name="share_on_facebook">SHARE ON FACEBOOK</string>
+    <string name="share_on_watsapp">SHARE ON WHATSAPP</string>
+    <string name="share_via">SHARE VIA...</string>
+
+    <string-array name="pulse_intro">
+        <item>Bye Boring Pictures</item>
+        <item>Showcase &amp; Watch</item>
+        <item>Follow &amp; Get Famous</item>
+    </string-array>
+
+    <string-array name="pulse__sub_intro">
+
+        <item>Click pictures &amp; Spice them up by adding\n awesome stickers in a tap.</item>
+        <item>Show your life to your campus &amp; watch\n what other campuses are upto.</item>
+        <item>Follow the favs of your campus &amp; get\n people to follow you.</item>
+    </string-array>
+
+    <string name="institute_edit_heading">Select An Institute</string>
+    <string name="institute_dialog_negative_btn">CANCEL</string>
+    <string name="institute_dialog_positive_btn">ADD LATER</string>
+    <string name="institute_dialog_header">Remove your Institution</string>
+    <string name="institute_dialog_body_text">Do you want to remove your Institution?  You can always add your Institution later  from settings.</string>
+    <string name="no_pictures_in_hrs">Sorry, no recent pictures in the last &#160;</string>
+    <string name="add_image_string">Adding an image/ video to your Stream allows friends to view it unlimited number of times for 24 hours. \n\nWould you like to add this image/ video to your Stream?</string>
+    <string name="add_institution_description">To unlock exclusive stickers of your school/college</string>
+</resources>

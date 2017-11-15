@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!--<dimen name="padding_small">10dp</dimen>-->
+    <!--<dimen name="activity_vertical_margin">16dp</dimen>-->
+    <!--<dimen name="navigation_drawer_width">240dp</dimen>-->
+    <!--<dimen name="ts_normal">15sp</dimen>-->
+
+<!--
+    <dimen name="padding_small">7dp</dimen>
+    <dimen name="padding_normal">15dp</dimen>
+    <dimen name="padding_large">20dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="navigation_drawer_width">240dp</dimen>
+    <dimen name="ts_xlarge">40sp</dimen>
+    <dimen name="ts_large">30sp</dimen>
+    <dimen name="ts_normal">15sp</dimen>
+    <dimen name="ts_small">15sp</dimen>
+    <dimen name="tab_width">90dp</dimen>-->
+
+    <dimen name="margin_small">10dp</dimen>
+    <dimen name="margin_normal">15dp</dimen>
+    <dimen name="margin_large">20dp</dimen>
+    <dimen name="margin_left_facebook">60dp</dimen>
+    <dimen name="margin_right_facebook">50dp</dimen>
+    <dimen name="padding_small">10dp</dimen>
+    <dimen name="padding_normal">15dp</dimen>
+    <dimen name="padding_large">20dp</dimen>
+    <dimen name="padding_xlarge">25dp</dimen>
+    <dimen name="padding_xxlarge">35dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="navigation_drawer_width">240dp</dimen>
+    <dimen name="ts_xlarge">26sp</dimen>
+    <dimen name="ts_large">24sp</dimen>
+    <dimen name="ts_xnormal">22sp</dimen>
+    <dimen name="ts_normal">16sp</dimen>
+    <dimen name="ts_small">13sp</dimen>
+    <dimen name="tab_width">90dp</dimen>
+    <dimen name="padding_search">150dp</dimen>
+    <dimen name="padding_search_ptp">100dp</dimen>
+    <dimen name="profile_pic_width">60dp</dimen>
+    <dimen name="padding_xsmall">5dp</dimen>
+    <dimen name="padding_xxsmall">3dp</dimen>
+    <dimen name="padding_xxxsmall">2dp</dimen>
+    <dimen name="ts_xsmall">10sp</dimen>
+    <dimen name="ts_xxsmall">8sp</dimen>
+    <dimen name="fab_margin_right">30dp</dimen>
+    <dimen name="fab_margin_top">10dp</dimen>
+    <dimen name="chat_profile_pic_width">80dp</dimen>
+    <dimen name="youtubechat_profile_pic_width">40dp</dimen>
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    tools:ignore="ContentDescription">
+
+    <ImageView
+        android:id="@+id/card_displayIV"
+        android:layout_width="@dimen/profile_pic_diameter"
+        android:layout_height="@dimen/profile_pic_diameter"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp" />
+
+    <com.pulseapp.android.customTextViews.MontserratRegularTextView
+        android:id="@+id/card_displayNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/card_displayIV"
+        android:alpha="0.87"
+        android:text="Name"
+        android:textColor="@android:color/black"
+        android:textSize="13sp" />
+
+    <com.pulseapp.android.customTextViews.MontserratRegularTextView
+        android:id="@+id/confirm_requestBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card_displayNameTV"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@+id/card_displayIV"
+        android:background="@drawable/pulse_purple_rounded_button_background"
+        android:paddingBottom="8dp"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:text="@string/confirm"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+
+    <com.pulseapp.android.customTextViews.MontserratRegularTextView
+        android:id="@+id/ignore_requestBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card_displayNameTV"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@+id/confirm_requestBTN"
+        android:background="@drawable/ignore_button_background"
+        android:paddingBottom="8dp"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:text="@string/ignore"
+        android:textAllCaps="true"
+        android:textColor="#60000000"
+        android:textSize="12sp" />
+</RelativeLayout>

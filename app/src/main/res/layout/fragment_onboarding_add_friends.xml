@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/hasFriendsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include
+            android:id="@+id/includedHeader"
+            layout="@layout/pulse_action_bar" />
+
+        <RelativeLayout
+            android:id="@+id/add_skip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/includedHeader"
+            android:background="@color/pulse_gray">
+
+            <TextView
+                android:id="@+id/suggestedFriendTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="SUGGESTED FRIENDS" />
+
+            <TextView
+                android:id="@+id/skipTV"
+                android:textSize="11sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="4dp"
+                android:padding="16dp"
+                android:text="Skip"
+                android:textColor="@color/pulse_light_violet" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add_skip" />
+
+
+
+        <com.pulseapp.android.customTextViews.MontserratSemiBoldTextView
+            android:id="@+id/nextPageTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/pulse_button_color"
+            android:gravity="center"
+            android:visibility="gone"
+            android:padding="20dp"
+            android:text="GET STARTED"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/noFriendsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/pulse_center_gradient"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/skip_no_friendsTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="30dp"
+            android:padding="16dp"
+            android:layout_centerHorizontal="true"
+            android:text="Skip"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/schoolKidIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="106dp"
+            app:srcCompat="@drawable/art2_svg" />
+
+        <TextView
+            android:id="@+id/inviteFriendsTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/schoolKidIV"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:text="Invite Friends!"
+            android:textColor="@android:color/white"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/popularTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inviteFriendsTV"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:alpha="0.87"
+            android:text="We know you’re popular"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/facebookButtonLL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/popularTV"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/facebook_button"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp"
+                android:paddingEnd="24dp"
+                android:paddingStart="24dp"
+                android:paddingTop="15dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/add"
+                    app:srcCompat="@drawable/fb_svg" />
+
+                <TextView
+                    android:id="@+id/facebookBTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Invite Facebook Friends"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!--<TextView-->
+            <!--android:id="@+id/neverPostTV"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:alpha="0.54"-->
+            <!--android:text="We NEVER post without your permission"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textSize="12sp" />-->
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+</FrameLayout>

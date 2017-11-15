@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="card_elevation">0dp</dimen>
+    <dimen name="margin_small">0dp</dimen>
+    <dimen name="padding_small">10dp</dimen>
+    <dimen name="padding_normal">20dp</dimen>
+    <dimen name="padding_large">30dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="navigation_drawer_width">240dp</dimen>
+    <dimen name="ts_xlarge">40sp</dimen>
+    <dimen name="ts_large">30sp</dimen>
+    <dimen name="ts_normal">20sp</dimen>
+    <dimen name="ts_small">15sp</dimen>
+    <dimen name="padding_search">140dp</dimen>
+    <dimen name="padding_search_ptp">90dp</dimen>
+    <dimen name="profile_pic_width">80dp</dimen>
+    <dimen name="youtubechat_profile_pic_width">40dp</dimen>
+</resources>

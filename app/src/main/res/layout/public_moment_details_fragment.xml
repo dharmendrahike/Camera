@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pulseapp.android.util.SmartViewPage xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/touch_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.pulseapp.android.ExoPlayer.AspectRatioFrameLayout
+        android:id="@+id/video_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black">
+
+        <TextureView
+            android:id="@+id/texture_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </com.pulseapp.android.ExoPlayer.AspectRatioFrameLayout>
+
+    <ImageView
+        android:id="@+id/momentImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:scaleType="fitCenter" />
+
+    <ImageView
+        android:id="@+id/closeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|top"
+        android:padding="10dp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/clear_svg_small" />
+
+
+    <com.pulseapp.android.util.MediaTimelineView
+        android:id="@+id/timeLineView"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_gravity="top"
+        android:visibility="visible" />
+
+    <com.pulseapp.android.customViews.PieView
+        android:id="@+id/pieView"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp" />
+
+    <RelativeLayout
+        android:id="@+id/nameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/pieView"
+        android:orientation="horizontal"
+        android:paddingLeft="38dp"
+        android:paddingTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_toStartOf="@+id/shareIv"
+            android:orientation="horizontal">
+
+            <com.pulseapp.android.customTextViews.MontserratSemiBoldTextView
+                android:id="@+id/createrName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:shadowColor="@color/text_shadow"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="8"
+                android:text="Name"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <com.pulseapp.android.customTextViews.MontserratRegularTextView
+                android:id="@+id/createdTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:shadowColor="@color/text_shadow"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="18"
+                android:text="3hrs ago"
+                android:textColor="#FFFFFF"
+                android:textSize="11sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/shareIv"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="2dp"
+            android:background="@drawable/black_rounded_fill_color"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/share_svg" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/createrGradient"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/creator_gradient_black"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/createrInfoLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="4dp"
+        android:padding="8dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/createrImage"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+            <ImageView
+                android:id="@+id/followImage"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="-9dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="12dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:orientation="horizontal">
+
+                <com.pulseapp.android.customTextViews.MontserratRegularTextView
+                    android:id="@+id/followText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="@color/text_shadow"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="8"
+                    android:text="Follow "
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:visibility="gone" />
+
+                <com.pulseapp.android.customTextViews.MontserratSemiBoldTextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="@color/text_shadow"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="8"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <com.pulseapp.android.customTextViews.MontserratRegularTextView
+                android:id="@+id/followers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:alpha="0.71"
+                android:shadowColor="@color/text_shadow"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="8"
+                android:textColor="@color/white"
+                android:textSize="11sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#BF000000"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressBarLoader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <com.pulseapp.android.customTextViews.MontserratSemiBoldTextView
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:id="@+id/viewMoreBtn"
+        android:text="View More"
+        android:background="#87000000"
+        android:layout_gravity="end|bottom"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+</com.pulseapp.android.util.SmartViewPage>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pulseapp.android.util.SmartViewPage xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/touch_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:ignore="ContentDescription">
+
+    <FrameLayout
+        android:id="@+id/backgroundFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+        <com.pulseapp.android.ExoPlayer.AspectRatioFrameLayout
+            android:id="@+id/video_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextureView
+                android:id="@+id/texture_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+        </com.pulseapp.android.ExoPlayer.AspectRatioFrameLayout>
+
+        <ImageView
+            android:id="@+id/mediaImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:scaleType="centerCrop" />
+
+        <com.pulseapp.android.customViews.PieView
+            android:id="@+id/pieView"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/shareIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="14dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/black_rounded_fill_color"
+            android:gravity="center"
+            android:padding="8dp"
+            app:srcCompat="@drawable/share_svg" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/sliderFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:translationY="800dp">
+
+        <ImageView
+            android:id="@+id/blurredIV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/sliderHeaderRL"
+            android:layout_width="match_parent"
+            android:layout_height="56dp">
+
+            <LinearLayout
+                android:id="@+id/viewersLL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/viewsIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp"
+                    app:srcCompat="@drawable/eye_svg" />
+
+                <com.pulseapp.android.customTextViews.MontserratRegularTextView
+                    android:id="@+id/viewsText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_toEndOf="@+id/viewersLL"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/screenShotIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/screen_shot_svg" />
+
+                <com.pulseapp.android.customTextViews.MontserratRegularTextView
+                    android:id="@+id/screenShotText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/deleteIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_toStartOf="@+id/downloadIV"
+                app:srcCompat="@drawable/delete_svg" />
+
+
+            <ImageView
+                android:id="@+id/arrowIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:padding="16dp"
+                app:srcCompat="@drawable/arrow_my_streams_svg" />
+
+            <ImageView
+                android:id="@+id/downloadIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                app:srcCompat="@drawable/download_svg" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/viewersRecyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sliderHeaderRL"
+            android:scrollbars="none" />
+    </RelativeLayout>
+</com.pulseapp.android.util.SmartViewPage>

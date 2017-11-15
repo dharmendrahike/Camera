@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <com.pulseapp.android.customTextViews.MontserratRegularTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Update Pulse"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+    <com.pulseapp.android.customTextViews.MontserratRegularTextView
+        android:id="@+id/nameTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:alpha="0.53"
+        android:gravity="center"
+        android:text="User, we’re always working to improve your Pulse expereince. Use the latest version to get new features and improvements. We hope you enjoy it!"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <com.pulseapp.android.customTextViews.MontserratRegularTextView
+            android:id="@+id/updateView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/pulse_purple_rounded_button_background"
+            android:paddingBottom="8dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:text="UPDATE NOW"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <com.pulseapp.android.customTextViews.MontserratRegularTextView
+            android:id="@+id/closeView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/ignore_button_background"
+            android:paddingBottom="8dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:text="NOT NOW"
+            android:textAllCaps="true"
+            android:textColor="#60000000"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+</LinearLayout>

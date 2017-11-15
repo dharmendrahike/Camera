@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/action_bar"
+        layout="@layout/pulse_action_bar" />
+
+    <com.pulseapp.android.customTextViews.MontserratRegularTextView
+        android:id="@+id/tv_info_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/action_bar"
+        android:layout_marginEnd="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:alpha="0.87"
+        android:text="@string/birthday_text"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+    <com.pulseapp.android.customTextViews.MontserratRegularTextView
+        android:id="@+id/tv_birthday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_info_text"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:paddingBottom="15dp"
+        android:alpha="0.87"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+    <View
+        android:id="@+id/v_separator1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tv_birthday"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/settings_separator" />
+
+    <com.pulseapp.android.customTextViews.MontserratRegularTextView
+        android:id="@+id/tv_header2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_separator1"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:alpha="0.87"
+        android:text="@string/birthday_text_2"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+    
+    <com.pulseapp.android.customTextViews.MontserratRegularTextView
+        android:id="@+id/tv_birthday_header_2"
+        android:textSize="12sp"
+        android:alpha="0.53"
+        android:textColor="@color/black"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="16dp"
+        android:layout_below="@+id/tv_header2"
+        android:text="@string/birthday_text_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/cb_birthday_reveal"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/v_separator1"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="19dp"
+        style="@style/CustomCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

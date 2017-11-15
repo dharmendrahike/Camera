@@ -1,0 +1,14 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<item
+        android:drawable="@drawable/pulse_center_gradient"
+        android:gravity="fill" />
+<item   android:gravity="center"
+        android:top="267dp"
+        android:bottom="267dp"
+        android:left="132dp"
+        android:right="132dp"
+        android:drawable="@drawable/logo_svg">
+</item>
+
+</layer-list>

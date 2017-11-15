@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myMomentHeaderRL"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_gravity="center"
+    android:background="@drawable/card_16px_radius">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginLeft="8dp"
+        android:paddingEnd="8dp">
+
+        <ImageView
+            android:id="@+id/myMomentsIV"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            app:srcCompat="@drawable/my_streams_svg" />
+
+        <ImageView
+            android:id="@+id/iv_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/myMomentsIV"
+            android:layout_alignTop="@+id/myMomentsIV"
+            android:visibility="gone"
+            app:srcCompat="@drawable/institution_flag_svg" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/myMomentsIV"
+            android:layout_toLeftOf="@+id/momentSliderIndicator"
+            android:orientation="vertical">
+
+            <com.pulseapp.android.customTextViews.MontserratRegularTextView
+                android:id="@+id/momentName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="14dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="@string/my_streams"
+                android:textColor="@android:color/black"
+                android:textSize="13sp" />
+
+            <com.pulseapp.android.customTextViews.MontserratRegularTextView
+                android:id="@+id/myStreamsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.52"
+                android:text="@string/add_photo_video"
+                android:textColor="@android:color/black"
+                android:textSize="11sp"
+                tools:ignore="SmallSp" />
+
+            <LinearLayout
+                android:id="@+id/streamStatsLL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/streamTotalViewIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    app:srcCompat="@drawable/view_dashboard_svg" />
+
+                <com.pulseapp.android.customTextViews.MontserratRegularTextView
+                    android:id="@+id/streamTotalViewTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:alpha="0.54"
+                    android:text="0"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp"
+                    tools:ignore="SmallSp" />
+
+                <ImageView
+                    android:id="@+id/streamTotalScreenShotIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    app:srcCompat="@drawable/screenshot_dashboard_svg" />
+
+
+                <com.pulseapp.android.customTextViews.MontserratRegularTextView
+                    android:id="@+id/streamTotalScreenShotTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:alpha="0.54"
+                    android:text="0"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp"
+                    tools:ignore="SmallSp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/momentSliderIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="20dp"
+            android:scaleY="-1"
+            app:srcCompat="@drawable/arrow_svg" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/tintFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:background="#80000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/popupView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="32dp"
+            android:background="@drawable/profile_popup_rounded_corners"
+            android:orientation="vertical"
+            android:paddingBottom="24dp">
+
+            <ImageView
+                android:id="@+id/profileIV"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/moment_circle_background" />
+
+            <com.pulseapp.android.customTextViews.MontserratRegularTextView
+                android:id="@+id/nameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profileIV"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_marginBottom="2dp"
+                android:text="name"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <com.pulseapp.android.customTextViews.MontserratRegularTextView
+                android:id="@+id/handleTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nameTV"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:alpha="0.54"
+                android:text="handle"
+                android:textColor="@android:color/black" />
+
+            <com.pulseapp.android.customTextViews.MontserratRegularTextView
+                android:layout_marginTop="12dp"
+                android:id="@+id/watchNow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/handleTV"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/pulse_purple_rounded_button_background"
+                android:paddingBottom="10dp"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:paddingTop="10dp"
+                android:text="WATCH NOW"
+                android:textColor="#FFFFFFFF"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginTop="12dp"
+                android:id="@+id/followLayout"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_below="@+id/handleTV"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/followlv"
+                    android:gravity="center"
+                    android:background="@drawable/cornered_pulse_theme_background"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:id="@+id/followIcon"
+                        android:layout_marginEnd="3dp"/>
+                    <com.pulseapp.android.customTextViews.MontserratRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:id="@+id/followText"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+                <FrameLayout
+                    android:layout_width="32dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:visibility="gone"
+                    android:id="@+id/notificationLayout"
+                    android:background="@drawable/cornered_pulse_theme_background">
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:id="@+id/notificationIcon"
+                        android:layout_gravity="center" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/shareImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitXY"
+                android:scaleX="1.2"
+                android:scaleY="1.2"
+                android:padding="16dp"
+                app:srcCompat="@drawable/share_purple_svg" />
+
+            <ImageView
+                android:id="@+id/settingImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:padding="16dp"
+                android:visibility="gone"
+                app:srcCompat="@drawable/settings_pulple_svg" />
+
+            <LinearLayout
+                android:id="@+id/blockLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/watchNow"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <com.pulseapp.android.customTextViews.MontserratRegularTextView
+                    android:id="@+id/removeBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="center"
+                    android:text="Remove Friend"
+                    android:textColor="@color/pulse_pressed_red_color" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp"
+                    android:alpha="0.11"
+                    android:background="#000000" />
+
+                <com.pulseapp.android.customTextViews.MontserratRegularTextView
+                    android:id="@+id/blockBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="center"
+                    android:text="Block"
+                    android:textColor="@color/pulse_pressed_red_color" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp"
+                    android:alpha="0.11"
+                    android:background="#000000" />
+
+                <com.pulseapp.android.customTextViews.MontserratRegularTextView
+                    android:id="@+id/cancelBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="center"
+                    android:text="Cancel"
+                    android:textColor="@color/pulse_button_color" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

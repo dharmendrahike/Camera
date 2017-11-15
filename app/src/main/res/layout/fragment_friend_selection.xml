@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/action_bar"
+        layout="@layout/pulse_action_bar" />
+    <ScrollView
+        android:layout_above="@+id/createListTV"
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/action_bar"
+        android:scrollbars="none">
+
+    <LinearLayout
+        android:background="@color/pulse_gray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/bodyLL"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/createListLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/pulse_gray"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="10dp"
+            android:visibility="visible">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/et_wrapper"
+                android:background="@color/pulse_gray"
+                app:hintAnimationEnabled="true"
+                app:errorEnabled="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.pulseapp.android.util.EditTextBackEvent
+                    android:id="@+id/groupName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/create_friendlist_hint"
+                    android:lineSpacingMultiplier="1.5"
+                    android:singleLine="true"
+                    android:textSize="13sp" />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/viewListLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <com.pulseapp.android.customTextViews.MontserratRegularTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:alpha="0.37"
+                android:paddingBottom="5dp"
+                android:singleLine="true"
+                android:text="To:"
+                android:textColor="@android:color/black"
+                android:textSize="13sp" />
+
+            <com.pulseapp.android.customTextViews.MontserratRegularTextView
+                android:id="@+id/groupNameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.87"
+                android:text="All Friends"
+                android:textColor="@color/black"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="@android:color/white"
+            cardView:cardPreventCornerOverlap="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="horizontal"
+                android:padding="0dp">
+
+                <com.pulseapp.android.customTextViews.MontserratRegularTextView
+                    android:id="@+id/exceptTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="16dp"
+                    android:alpha="0.37"
+                    android:layout_marginEnd="16dp"
+                    android:text="Except"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp" />
+
+
+
+                <android.support.v7.widget.SearchView
+                    android:id="@+id/searchView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    app:closeIcon="@drawable/cross_dashboard_svg"
+                    app:defaultQueryHint="@string/search_friends_by_name"
+                    app:searchIcon="@drawable/search_friends_svg" />
+
+                <LinearLayout
+                    android:id="@+id/userListLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <com.pulseapp.android.customTextViews.MontserratRegularTextView
+            android:id="@+id/headerTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:alpha="0.53"
+            android:padding="10dp"
+            android:textAllCaps="true"
+            android:visibility="gone"
+            android:textColor="@android:color/black"
+            android:textSize="11sp" />
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" />
+    </LinearLayout>
+    </ScrollView>
+
+    <com.pulseapp.android.customTextViews.MontserratRegularTextView
+        android:id="@+id/createListTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/pulse_button_color"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="CREATE LIST"
+        android:visibility="gone"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+</RelativeLayout>

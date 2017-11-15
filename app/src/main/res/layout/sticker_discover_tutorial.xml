@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="end"
+    android:layout_marginEnd="50dp"
+    android:layout_marginTop="48dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/popupBackgroundIV"
+        android:layout_width="138dp"
+        android:layout_height="40.5dp" />
+
+    <com.pulseapp.android.customTextViews.MontserratRegularTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="Add cute stickers!"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+
+</FrameLayout>

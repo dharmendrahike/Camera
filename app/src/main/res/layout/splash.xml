@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/pulseIV"
+        app:srcCompat="@drawable/logo_svg"
+        android:textColor="@android:color/white"
+        android:layout_centerInParent="true"
+        android:padding="20dp"
+        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:visibility="gone"
+        android:layout_below="@+id/pulseTV"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:text="Swipe Right To Jump to dashboard"
+        android:padding="20dp"
+        android:layout_height="wrap_content" />
+
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/shadowLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@color/recorded_popup_overlay"-->
+        <!--android:visibility="gone"/>-->
+
+    <!--<include android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--layout="@layout/update_app_popup"/>-->
+</RelativeLayout>

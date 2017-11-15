@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:layout_gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/createListIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|start"
+        android:padding="8dp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/create_list_svg"
+        tools:ignore="ContentDescription" />
+
+
+    <ImageView
+        android:id="@+id/contentRadio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|start"
+        android:layout_toEndOf="@+id/createListIV"
+        android:clickable="true"
+        android:padding="8dp"
+        app:srcCompat="@drawable/radio_off_svg"
+        tools:ignore="ContentDescription" />
+
+
+    <ImageView
+        android:id="@+id/contentDescIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|start"
+        android:layout_toEndOf="@+id/contentRadio"
+        android:clickable="true"
+        android:padding="8dp"
+        app:srcCompat="@drawable/privacy_custom_svg"
+        tools:ignore="ContentDescription" />
+
+    <com.pulseapp.android.customTextViews.MontserratRegularTextView
+        android:id="@+id/desc"
+        android:text="header"
+        android:alpha="0.87"
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_gravity="center_vertical"
+        android:layout_toEndOf="@+id/contentDescIV"
+        android:layout_toStartOf="@+id/updateImageView"
+        android:maxWidth="100dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textColor="@android:color/black"
+        android:textSize="13sp" />
+    <com.pulseapp.android.customTextViews.MontserratRegularTextView
+        android:id="@+id/subDesc"
+        android:text="header"
+        android:alpha="0.53"
+        android:layout_below="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_gravity="center_vertical"
+        android:layout_toEndOf="@+id/contentDescIV"
+        android:layout_toStartOf="@+id/updateImageView"
+        android:maxWidth="100dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_marginTop="4dp"
+        android:textColor="@android:color/black"
+        android:textSize="11sp" />
+
+    <ImageView
+        android:id="@+id/updateImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:layout_gravity="center_vertical|end"
+        android:src="@android:drawable/ic_media_ff"
+        app:srcCompat="@drawable/create_list_arrow_svg"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>

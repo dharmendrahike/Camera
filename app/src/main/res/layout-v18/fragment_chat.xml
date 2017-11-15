@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pulseapp.android.customViews.CustomFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/customFrame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ContentDescription">
+
+    <ImageView
+        android:id="@+id/tintFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000" />
+
+    <RelativeLayout
+        android:id="@+id/chatRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/action_bar"
+            layout="@layout/pulse_action_bar" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/chat_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/editTextLinear"
+            android:layout_below="@+id/action_bar"
+            android:background="@color/pulse_gray" />
+
+        <LinearLayout
+            android:id="@+id/no_chats_included_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <include layout="@layout/no_chat_items_to_display" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/editTextLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/pulse_gray"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="bottom"
+                android:layout_toStartOf="@+id/send_messageIV"
+                android:paddingBottom="8dp"
+                android:paddingStart="10dp"
+                android:paddingTop="0dp">
+
+                <EditText
+                    android:paddingStart="8dp"
+                    android:id="@+id/messageEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="12sp"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/edit_text_black_border"
+                    android:hint="@string/say_something_hint" />
+            </LinearLayout>
+
+            <com.pulseapp.android.floatingbutton.FloatingActionButton
+                android:id="@+id/send_messageIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="end|bottom"
+                android:scaleType="centerInside"
+                fab:fab_icon="@drawable/send_message"
+                fab:fab_size="mini"
+                fab:fab_title="Record" />
+        </RelativeLayout>
+    </RelativeLayout>
+</com.pulseapp.android.customViews.CustomFrameLayout>

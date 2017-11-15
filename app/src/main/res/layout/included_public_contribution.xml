@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/publicContributeRL"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_gravity="bottom"
+    android:background="#5E000000"
+    android:paddingStart="16dp">
+
+    <com.pulseapp.android.customTextViews.MontserratSemiBoldTextView
+        android:id="@+id/streamNameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Stream Name"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/publicStreamContributeIV"
+        android:textColor="@android:color/white"
+        android:textSize="13sp" />
+
+    <com.pulseapp.android.customTextViews.MontserratRegularTextView
+        android:id="@+id/morePublicStreamContributeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/streamNameTv"
+        android:layout_marginTop="3dp"
+        android:text="+ Contribute to more streams!"
+        android:textColor="@android:color/white"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:id="@+id/publicStreamContributeIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="8dp"
+        android:padding="8dp"
+        app:srcCompat="@drawable/ic_send_public_svg" />
+</RelativeLayout>

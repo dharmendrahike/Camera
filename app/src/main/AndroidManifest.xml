@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pulseapp.android" >
+
+    <!--<permission-->
+        <!--android:name="${applicationId}.permission.MAPS_RECEIVE"-->
+        <!--android:protectionLevel="signature" />-->
+
+    <!--<uses-permission android:name="${applicationId}.permission.MAPS_RECEIVE" />-->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" android:required="false"/>
+    <!--<uses-permission android:name="android.permission.USE_CREDENTIALS" android:required="false"/>-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" android:required="false"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" android:required="false"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" android:required="false"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" android:required="false"/>
+    <!--<uses-permission android:name="android.permission.SEND_SMS" android:required="false" />-->
+    <uses-permission android:name="android.permission.WAKE_LOCK" android:required="false"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:required="false"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:required="false"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.CALL_PHONE" android:required="false"/>
+
+    <!--<uses-permission android:name="android.permission.READ_CONTACTS" android:required="false"/>-->
+
+    <!-- Required OpenGL ES 2.0. for Maps V2 -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <permission
+        android:name="${applicationId}.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="${applicationId}.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!--permissions to receive,read and write sms-->
+    <!--<uses-permission android:name="android.permission.READ_SMS" android:required="false" />-->
+    <!--<uses-permission android:name="android.permission.WRITE_SMS" android:required="false" />-->
+    <!--<uses-permission android:name="android.permission.RECEIVE_SMS" android:required="false" />-->
+
+
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+
+    <!--<compatible-screens>-->
+        <!--<screen android:screenSize="large" android:screenDensity="480" />-->
+        <!--<screen android:screenSize="xlarge" android:screenDensity="480" />-->
+
+        <!--<screen android:screenSize="small" android:screenDensity="ldpi" />-->
+        <!--<screen android:screenSize="small" android:screenDensity="mdpi" />-->
+        <!--<screen android:screenSize="small" android:screenDensity="hdpi" />-->
+        <!--<screen android:screenSize="small" android:screenDensity="xhdpi"/>-->
+
+        <!--&lt;!&ndash;all normal size screens &ndash;&gt;-->
+        <!--<screen android:screenSize="normal" android:screenDensity="ldpi" />-->
+        <!--<screen android:screenSize="normal" android:screenDensity="mdpi" />-->
+        <!--<screen android:screenSize="normal" android:screenDensity="hdpi" />-->
+        <!--<screen android:screenSize="normal" android:screenDensity="xhdpi" />-->
+
+        <!--&lt;!&ndash; all large size screens &ndash;&gt;-->
+        <!--<screen android:screenSize="large" android:screenDensity="ldpi" />-->
+        <!--<screen android:screenSize="large" android:screenDensity="mdpi" />-->
+        <!--<screen android:screenSize="large" android:screenDensity="hdpi" />-->
+        <!--<screen android:screenSize="large" android:screenDensity="xhdpi" />-->
+
+        <!--&lt;!&ndash; all xlarge size screens &ndash;&gt;-->
+        <!--<screen android:screenSize="xlarge" android:screenDensity="ldpi" />-->
+        <!--<screen android:screenSize="xlarge" android:screenDensity="mdpi" />-->
+        <!--<screen android:screenSize="xlarge" android:screenDensity="hdpi" />-->
+        <!--<screen android:screenSize="xlarge" android:screenDensity="xhdpi" />-->
+
+        <!--&lt;!&ndash; Special case for Nexus 7 &ndash;&gt;-->
+        <!--<screen android:screenSize="large" android:screenDensity="213" />-->
+
+    <!--</compatible-screens>-->
+
+
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false" />
+
+    <application
+        android:name="com.pulseapp.android.MasterClass"
+        android:allowBackup="false"
+        android:largeHeap="true"
+        android:hardwareAccelerated="true"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:authorities="${applicationId}.provider"
+        android:icon="@drawable/pulse_icon">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="face" />
+
+        <service
+            android:name="com.pulseapp.android.services.ContactService"
+            android:exported="false" />
+
+        <service
+            android:name="com.pulseapp.android.services.CleanDataService"
+            android:exported="false" />
+
+        <service
+            android:name=".services.SendNotificationIntentService"
+            android:exported="false" />
+
+        <service
+            android:name="com.pulseapp.android.services.UpdateProfileService"
+            android:exported="false" />
+
+        <service
+            android:name="com.pulseapp.android.chatsetup.FirebaseMessageService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.pulseapp.android.chatsetup.FirebaseTokenRefresh">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service android:name= "com.amazonaws.mobileconnectors.s3.transferutility.TransferService" android:enabled="true" />
+
+        <!--<receiver android:name="com.instalively.android.receivers.SmsReceiver" android:exported="true">-->
+        <!--<intent-filter android:priority="900">-->
+        <!--<action android:name="android.provider.Telephony.SMS_RECEIVED"></action>-->
+        <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <!--<receiver android:name=".receivers.PhoneCallReceiver" >-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.intent.action.PHONE_STATE" />-->
+        <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <activity
+            android:name="com.pulseapp.android.Splash"
+            android:label="@string/app_name"
+            android:theme="@style/SplashTheme"
+            android:screenOrientation="sensorPortrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+                <category android:name="android.intent.category.BROWSABLE"></category>
+                <data android:scheme="http" android:host="www.mypulse.tv" ></data>
+                <data android:scheme="https" android:host="www.mypulse.tv" ></data>
+                <data android:scheme="http" android:host="mypulse.tv" ></data>
+                <data android:scheme="https" android:host="mypulse.tv" ></data>
+                <data android:pathPattern="/.*"></data>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+        </activity>
+        <!--<activity-->
+            <!--android:name="com.instalively.android.activities.FacebookLoginActivity"-->
+            <!--android:label="@string/app_name"-->
+            <!--android:windowSoftInputMode="stateHidden|adjustPan"-->
+            <!--android:screenOrientation="sensorPortrait">-->
+        <!--</activity>-->
+        <activity
+            android:name="com.pulseapp.android.activities.FacebookLogin"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="sensorPortrait">
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--<activity-->
+            <!--android:name="com.facebook.CustomTabActivity"-->
+            <!--android:exported="true">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.VIEW" />-->
+                <!--<category android:name="android.intent.category.DEFAULT" />-->
+                <!--<category android:name="android.intent.category.BROWSABLE" />-->
+                <!--<data android:scheme="@string/facebook_app_id" />-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
+
+        <activity
+            android:name="com.pulseapp.android.activities.CameraActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="sensorPortrait">
+        </activity>
+        <!--windowSoftInputMode for camera activity overRidden in chatFragment-->
+
+      <!--  <activity
+            android:name=".activities.ViewMomentActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden"
+            android:screenOrientation="sensorPortrait">
+
+        </activity>-->
+
+        <!--OnBoarding activity-->
+        <activity
+            android:name="com.pulseapp.android.activities.OnBoardingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="sensorPortrait">
+
+        </activity>
+        <activity
+            android:name="com.pulseapp.android.activities.VideoEditorActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="sensorPortrait"/>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="d7365f17e97e73d1fe9a8f5a9d0f26849add8279" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="${applicationId}.com.facebook.app.FacebookContentProvider582666665271675"
+            android:exported="true" />
+
+        <receiver android:name="com.appsflyer.SingleInstallBroadcastReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <!--<receiver-->
+            <!--android:name=".receivers.ScreenshotReceiver"-->
+            <!--android:enabled="true"-->
+            <!--android:exported="true" >-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MEDIA_SCANNER_SCAN_FILE" />-->
+                <!--<data android:scheme="file"/>-->
+                <!--<data android:mimeType="*/*"/>-->
+                <!--<data android:pathPattern=".*\\.png" />-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <!--<service android:name="com.parse.PushService" />-->
+        <!--<receiver android:name="com.instalively.android.chatsetup.NotificationReceiver"-->
+            <!--android:exported="false">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.parse.push.intent.RECEIVE" />-->
+                <!--<action android:name="com.parse.push.intent.DELETE" />-->
+                <!--<action android:name="com.parse.push.intent.OPEN" />-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+        <!--<receiver android:name="com.parse.GcmBroadcastReceiver"-->
+            <!--android:permission="com.google.android.c2dm.permission.SEND">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.google.android.c2dm.intent.RECEIVE" />-->
+                <!--<action android:name="com.google.android.c2dm.intent.REGISTRATION" />-->
+                <!--<category android:name="com.instalively.android" />-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <!--<service-->
+            <!--android:name=".chatsetup.FinalNotificationIntentService"-->
+            <!--android:exported="false" >-->
+        <!--</service>-->
+
+        <service android:name="com.pulseapp.android.services.KillAppService" android:stopWithTask="false" />
+
+        <!-- Goolge API Key -->
+        <!--AIzaSyCOeOhrdhcQciZkNMa7NpbbRnphwBsD9SY-->
+        <!--AIzaSyCTschxkcMcKSKVFgomUaNr2Eja21IgY-Q-->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBIQ0IlWxK0DnbdlGiZ4x4ZBKNNW0UFq9o" />
+
+        <!-- Set custom default icon. This is used when no icon is set for incoming notification messages.
+     See README(https://goo.gl/l4GJaQ) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/notification_logo" />
+        <!-- Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/notification_icon_background"/>
+
+        <!--//release key-->
+        <!--AIzaSyBIQ0IlWxK0DnbdlGiZ4x4ZBKNNW0UFq9o-->
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/fileprovider" />
+
+        </provider>
+
+    </application>
+
+</manifest>

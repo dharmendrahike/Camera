@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_marginTop="116dp"
+        android:id="@+id/iv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv2"
+        android:src="@drawable/school" />
+
+    <com.pulseapp.android.customTextViews.Museo700TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/unlockView"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Want your exclusive\n school/college stickers?"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <com.pulseapp.android.customTextViews.MontserratSemiBoldTextView
+        android:id="@+id/unlockView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/pulse_purple_rounded_button_background"
+        android:paddingBottom="8dp"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:text="UNLOCK NOW"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+</RelativeLayout>

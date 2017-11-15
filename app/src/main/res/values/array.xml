@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="mycolors">
+        <item>@color/instalively_red</item>
+        <item>@color/instalively_green</item>
+        <item>@color/instalively_yellow</item>
+        <item>@color/instalively_blue</item>
+    </integer-array>
+
+    <array name="letter_tile_colors">
+        <item>#8943f9</item>
+        <item>#fc7c46</item>
+        <item>#458eff</item>
+        <item>#47fd92</item>
+        <item>#fcc944</item>
+        <item>#383838</item>
+        <item>#fd4646</item>
+        <item>#fb3958</item>
+    </array>
+
+</resources>

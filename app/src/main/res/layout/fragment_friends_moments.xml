@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/momentsPresentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.pulseapp.android.customTextViews.MontserratRegularTextView
+            android:id="@+id/unSeenFriendsMomentHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.53"
+            android:text="FRIENDS"
+            android:gravity="center_vertical"
+            android:paddingBottom="12dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:textSize="10sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/unSeenFriendsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:overScrollMode="never"
+            android:paddingStart="16dp" />
+
+        <com.pulseapp.android.customTextViews.MontserratRegularTextView
+            android:id="@+id/unSeenFollowersMomentHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.53"
+            android:text="FOLLOWING"
+            android:gravity="center_vertical"
+            android:paddingBottom="12dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:textSize="10sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/unSeenFollowersRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:overScrollMode="never"
+            android:paddingStart="16dp" />
+
+        <RelativeLayout
+            android:id="@+id/seenMomentsHeaderLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical">
+
+            <com.pulseapp.android.customTextViews.MontserratRegularTextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/seenHeaderView"
+                android:textSize="11sp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/pulse_theme_color"
+                android:text="@string/seen_text"/>
+
+            <!--<ImageView-->
+                <!--android:id="@+id/iv_settings"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginEnd="16dp"-->
+                <!--android:visibility="gone"-->
+                <!--app:srcCompat="@drawable/settings_svg" />-->
+        </RelativeLayout>
+
+        <com.pulseapp.android.customTextViews.MontserratRegularTextView
+            android:id="@+id/seenFriendsMomentHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.53"
+            android:text="FRIENDS"
+            android:gravity="center_vertical"
+            android:paddingBottom="6dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:textSize="10sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/seenFriendsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:overScrollMode="never"
+            android:paddingStart="16dp" />
+
+        <com.pulseapp.android.customTextViews.MontserratRegularTextView
+            android:id="@+id/seenFollowersMomentHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.53"
+            android:text="FOLLOWING"
+            android:gravity="center_vertical"
+            android:paddingBottom="6dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:textSize="10sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/seenFollowersRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:overScrollMode="never"
+            android:paddingStart="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/no_moments_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include
+            android:id="@+id/include_no_moment_layout"
+            layout="@layout/no_moments_to_display" />
+    </LinearLayout>
+
+</LinearLayout>

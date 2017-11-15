@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <com.pulseapp.android.customViews.CircleImageView
+        android:id="@+id/iv_profile_pic"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="12dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+    <com.pulseapp.android.customTextViews.MontserratRegularTextView
+        android:id="@+id/tv_name"
+        android:layout_toRightOf="@+id/iv_profile_pic"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/black"
+        android:alpha="0.87"
+        android:textSize="13sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.pulseapp.android.customTextViews.MontserratRegularTextView
+        android:id="@+id/tv_user_handle"
+        android:layout_toRightOf="@+id/iv_profile_pic"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/black"
+        android:alpha="0.54"
+        android:textSize="11sp"
+        android:layout_below="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_unblock"
+        style="?attr/borderlessButtonStyle"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:background="@drawable/pulse_button_rounded_corner"
+        android:text="@string/unblock"
+        android:layout_width="96dp"
+        android:layout_height="32dp" />
+
+</RelativeLayout>

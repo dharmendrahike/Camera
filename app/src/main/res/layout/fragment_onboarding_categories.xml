@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayoutRL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:baselineAligned="false"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:background="#a22d2d2d"/>
+    <TextView
+        android:id="@+id/preferenceTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="WHAT WOULD YOU LIKE TO WATCH?"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/borderView"
+        android:layout_below="@+id/preferenceTV"
+        android:numColumns="2"
+        android:padding="5dp">
+    </GridView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:id="@+id/borderView"
+        android:layout_above="@+id/nextPageLL"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/nextPageLL"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#20000000"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/nextPageTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Pick at least 3 categories"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>
+
+

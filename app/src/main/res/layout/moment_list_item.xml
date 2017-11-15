@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/momentImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp" />
+
+
+    <com.pulseapp.android.customTextViews.MontserratRegularTextView
+        android:id="@+id/momentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/momentImage"
+        android:alpha="0.87"
+        android:layout_toStartOf="@+id/itemRadio"
+        android:textColor="@android:color/black"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:id="@+id/settingView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/momentName"
+        android:gravity="center_vertical"
+        android:layout_toEndOf="@+id/momentImage"
+        android:layout_toStartOf="@+id/itemRadio"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginEnd="4dp"
+            app:srcCompat="@drawable/eye_svg_gray" />
+
+        <com.pulseapp.android.customTextViews.MontserratRegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/viewers"
+            android:alpha="0.54"
+            android:text="@string/public_post_text"
+            android:textColor="@android:color/black"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/itemRadio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:clickable="false"
+        android:paddingEnd="16dp" />
+</RelativeLayout>

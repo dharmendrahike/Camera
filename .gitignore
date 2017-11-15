@@ -1,0 +1,29 @@
+I# Local configuration file (sdk path, etc)
+/local.properties
+
+#built application files
+*.apk
+*.ap_
+
+# Windows thumbnail db
+Thumbs.db
+
+# OSX files
+.DS_Store
+
+# Eclipse project files
+.classpath
+.project
+
+# Android Studio
+*.iml
+.idea
+#.idea/workspace.xml - remove # and delete .idea if it better suit your needs.
+.gradle
+build/
+library/build
+captures/
+#Misc
+commit.txt
+app/src/main/java/com/instalively/android/JsonSender.java
+

@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/instalively_blue"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/back_svg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/share_text"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@android:drawable/ic_menu_search" />
+            <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@android:drawable/ic_menu_search"-->
+            <!--android:padding="10dp"/>-->
+            <!-- coomented for now-->
+        </LinearLayout>
+    </FrameLayout>
+
+    <include
+        android:id="@+id/action_bar"
+        layout="@layout/pulse_action_bar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/shareLayout"
+        android:layout_below="@+id/action_bar"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <RelativeLayout
+                android:id="@+id/myMomentView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="4dp"
+                android:paddingTop="6dp"
+                android:focusableInTouchMode="true"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/momentImage"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="12dp"
+                    app:srcCompat="@drawable/my_streams_svg" />
+
+
+                <com.pulseapp.android.customTextViews.MontserratRegularTextView
+                    android:id="@+id/momentName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_toEndOf="@+id/momentImage"
+                    android:alpha="0.87"
+                    android:text="@string/my_stream_text"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:id="@+id/privacySettingView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/momentName"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center_vertical"
+                    android:layout_toEndOf="@+id/momentImage"
+                    android:background="@drawable/all_friends_drawable"
+                    android:layout_toStartOf="@+id/itemRadio"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_shareImage"
+                        android:visibility="visible"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="6dp"
+                        app:srcCompat="@drawable/icon_all_friends" />
+
+                    <com.pulseapp.android.customTextViews.MontserratRegularTextView
+                        android:id="@+id/tv_shareText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.53"
+                        android:scrollHorizontally="true"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:maxWidth="180dp"
+                        android:text="@string/all_friends_text"
+                        android:textColor="@android:color/black"
+                        android:textSize="11sp" />
+
+                    <ImageView
+                        android:layout_marginLeft="2dp"
+                        app:srcCompat="@drawable/down_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/myMomentItemRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="false"
+                    android:layout_marginEnd="16dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/customMomentsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="0dp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/anonym_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <com.pulseapp.android.customTextViews.MontserratRegularTextView
+                            android:id="@+id/tv_switch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="12dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:textAllCaps="true"
+                            android:text="CONTRIBUTE TO:"
+                            android:textColor="#9900ff"
+                            android:textSize="12sp" />
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/switch_non_anonymously"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginTop="10dp"
+                        app:theme="@style/ColorSwitchStyle" />
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/momentRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:scrollbars="none" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/postFacebookLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.72"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:background="@color/white">
+                    <FrameLayout
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/facebookImage"
+                        android:background="@drawable/facebook_rounded_background">
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/fb_white_icon" />
+                    </FrameLayout>
+
+                    <com.pulseapp.android.customTextViews.MontserratRegularTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_toEndOf="@+id/facebookImage"
+                        android:alpha="0.87"
+                        android:text="Facebook"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/itemRadio"
+                        android:textColor="@android:color/black"
+                        android:textSize="13sp" />
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/facebookItemRadio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:clickable="false"
+                        android:paddingEnd="16dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/message_heading"
+                android:layout_height="wrap_content">
+
+
+                <com.pulseapp.android.customTextViews.MontserratRegularTextView
+                    android:id="@+id/privateTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:alpha="0.71"
+                    android:text="@string/private_desc_header"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="8dp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/message_subheading"
+                android:background="@android:color/white"
+                android:paddingStart="16dp">
+
+                <com.pulseapp.android.customTextViews.MontserratRegularTextView
+                    android:id="@+id/recentText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.53"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="6dp"
+                    android:text="@string/recent_text"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/newGroupLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="26dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/group_gray_svg" />
+
+                <com.pulseapp.android.customTextViews.MontserratRegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/new_group_text"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recentRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:scrollbars="none" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/friendListRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/shareLayout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="0dp"
+        android:background="@color/pulse_button_color"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <com.pulseapp.android.customTextViews.MontserratSemiBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/share_text"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <com.pulseapp.android.util.PrivacyPopup
+        android:id="@+id/pricacyPopup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="#80000000"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/roomListContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</RelativeLayout>

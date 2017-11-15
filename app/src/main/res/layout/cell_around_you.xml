@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+
+    <View
+        android:id="@+id/loader"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/momentImageIV"
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/loader"
+        android:layout_gravity="center" />
+
+
+    <com.pulseapp.android.customTextViews.MontserratRegularTextView
+        android:id="@+id/momentNameTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxWidth="70dp"
+        android:padding="6dp"
+        android:text="Karthik Vaidyanath"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        tools:ignore="SmallSp" />
+
+
+    <ImageView
+        android:id="@+id/progressBarLoader"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="6dp" />
+
+    <ImageView
+        android:id="@+id/seenTickIV"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="6dp" />
+
+
+</RelativeLayout>
